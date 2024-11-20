@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,17 +17,26 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
-            <a class="navbar-brand mx-auto" href="../">ARCADIA ZOO</a>
+            <a class="navbar-brand mx-auto" href="../pages/Index.html">ARCADIA ZOO</a>
+            
+            <!-- Bouton de menu pour mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Liens du menu -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/animaux.html">Animaux</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="animaux.html">Animaux</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Habitats</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Habitats
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="savane.html">Savane</a></li>
                             <li><a class="dropdown-item" href="foret.html">Forêt</a></li>
@@ -36,17 +45,21 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                             <li><a class="dropdown-item" href="avis.html">Laisser un avis</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="connexion.html">Connexion</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connexion.html">Connexion</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> 
 </header>
 
 <!-- Section Contact -->
@@ -114,14 +127,17 @@
     <div class="container">
         <p class="footer-description mb-2">Arcadia est un zoo situé en France, près de la majestueuse forêt de Brocéliande.</p>
         <ul class="footer-nav list-inline">
-            <li class="list-inline-item"><a href="/index.html" class="footer-link">Accueil</a></li>
+            <li class="list-inline-item"><a href="../pages/Index.html" class="footer-link">Accueil</a></li>
             <li class="list-inline-item"><a href="contact.html" class="footer-link">Contact</a></li>
-            <li class="list-inline-item"><a href="/pages/animaux.html" class="footer-link">Animaux</a></li>
-            <li class="list-inline-item"><a href="/pages/univers.html" class="footer-link">Habitats</a></li>
+            <li class="list-inline-item"><a href="../pages/animaux.html" class="footer-link">Animaux</a></li>
+            <li class="list-inline-item"><a href="../pages/univers.html" class="footer-link">Habitats</a></li>
         </ul>
         <p class="footer-copyright mt-3">&copy; 2023 Arcadia Zoo - Tous droits réservés</p>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
