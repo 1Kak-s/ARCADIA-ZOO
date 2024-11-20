@@ -1,0 +1,3 @@
+# Autoriser l'accès aux fichiers HTML
+Options -Indexes
+DirectoryIndex index.html

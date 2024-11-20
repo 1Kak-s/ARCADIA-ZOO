@@ -8,7 +8,7 @@ body {
     margin: 0%;
 }
 
-corrige le si tu le souhaite et applique le a toutes les pages deja faites et aux futur que je vais t'envoyer 
+
 /* Titre et paragraphe de la section bienvenue */
 .welcome-content h1,
 .welcome-content ,
@@ -623,7 +623,7 @@ body {
 }
 
  /* Styles pour les sections */
- .animal-section {
+.animal-section {
     margin: 50px 0;
 }
 
