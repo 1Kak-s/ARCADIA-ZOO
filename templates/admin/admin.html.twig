@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Zoo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="d-flex">
+    <nav class="bg-dark text-white p-3 vh-100" style="width: 250px;">
+      <h2 class="text-center">Admin Panel</h2>
+      <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+          <a href="#dashboard" class="nav-link text-white">Tableau de bord</a>
+        </li>
+        <li class="nav-item">
+          <a href="#animals" class="nav-link text-white">Gestion des animaux</a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link text-white">Valider les avis</a>
+        </li>
+        <li class="nav-item">
+          <a href="#roles" class="nav-link text-white">Gestion des rôles</a>
+        </li>
+        <li class="nav-item">
+          <a href="#accounts" class="nav-link text-white">Validation des comptes</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid p-4">
+      <div id="dashboard">
+        <h1>Tableau de bord</h1>
+        <p>Bienvenue dans le panneau d'administration du Zoo. Utilisez le menu pour gérer le contenu.</p>
+      </div>
+
+      <!-- Section: Gestion des animaux -->
+      <div id="animals" class="mt-5">
+        <h2>Gestion des animaux</h2>
+        <button class="btn btn-primary mb-3">Ajouter un animal</button>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Espèce</th>
+              <th>Photo</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lion</td>
+              <td>Mammifère</td>
+              <td><img src="{{ asset('images/lion.jpg') }}" alt="Lion" style="width: 50px;"></td>
+              <td>
+                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-danger">Supprimer</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Section: Validation des avis -->
+      <div id="reviews" class="mt-5">
+        <h2>Valider les avis des visiteurs</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Avis</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jean Dupont</td>
+              <td>Superbe zoo, j'ai adoré !</td>
+              <td>
+                <button class="btn btn-success">Valider</button>
+                <button class="btn btn-danger">Refuser</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Section: Gestion des rôles -->
+      <div id="roles" class="mt-5">
+        <h2>Gestion des rôles</h2>
+        <button class="btn btn-primary mb-3">Affecter un rôle</button>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Email</th>
+              <th>Rôle</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Marie</td>
+              <td>marie@example.com</td>
+              <td>Vétérinaire</td>
+              <td>
+                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-danger">Supprimer</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Section: Validation des comptes -->
+      <div id="accounts" class="mt-5">
+        <h2>Validation des comptes employés</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paul</td>
+              <td>paul@example.com</td>
+              <td>
+                <button class="btn btn-success">Valider</button>
+                <button class="btn btn-danger">Refuser</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
